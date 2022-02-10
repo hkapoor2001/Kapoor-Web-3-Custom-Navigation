@@ -115,6 +115,7 @@ header > div #header-container #social-icons-container .fa-instagram-square {
   grid-area: row2;
   z-index: 10;
   margin-bottom: 7%;
+  overflow: hidden;
 }
 #nav-container #nav-menu-row-2 > div {
   height: 100%;
@@ -128,7 +129,7 @@ header > div #header-container #social-icons-container .fa-instagram-square {
 #nav-container #nav-menu-row-2 > div nav #menulist {
   height: 100%;
   display: grid;
-  grid-template-columns: 36% 8% 28% 8% auto;
+  grid-template-columns: 34% 8% 28% 8% auto;
   grid-template-areas: "menu1 . menu2 . menu3";
 }
 #nav-container #nav-menu-row-2 > div nav #menulist .menuliclass {

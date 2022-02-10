@@ -48,6 +48,7 @@
         grid-area: row2;
         z-index: 10;
         margin-bottom: 7%;
+        overflow: hidden;
 
         >div{
             height: 100%;
@@ -61,7 +62,7 @@
                 #menulist{
                     height: 100%;
                     display: grid;
-                    grid-template-columns: 36% 8% 28% 8% auto;
+                    grid-template-columns: 34% 8% 28% 8% auto;
                     grid-template-areas: "menu1 . menu2 . menu3";
 
                     .menuliclass{
