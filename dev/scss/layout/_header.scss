@@ -1,0 +1,52 @@
+header{
+    width: 100%;
+    z-index: 900;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-areas: ". container .";
+    padding-top: 4%;
+
+    >div{
+        grid-area: container;
+
+        #header-container{
+            display: grid;
+            grid-template-areas: "icons logo burger";
+            grid-template-columns: 1fr 1fr 1fr;
+
+            #burger-container{
+                grid-area:burger;
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            #logo-container{
+                grid-area:logo;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #social-icons-container{
+                grid-area: icons;
+                display:flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+                .fa-facebook-square{
+                    color: white;
+                    font-size: 30px,
+                }
+                .fa-twitter-square{
+                    color: white;
+                    font-size: 30px,
+                }
+                .fa-instagram-square{
+                    color: white;
+                    font-size: 30px,
+                }
+            }
+        }
+    }
+}

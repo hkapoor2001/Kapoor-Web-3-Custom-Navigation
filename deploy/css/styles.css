@@ -1,0 +1,188 @@
+/* =============
+    Mixins
+============= */
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+html {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 0px;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  z-index: 900;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 90% auto;
+  grid-template-areas: ". container .";
+  padding-top: 4%;
+}
+header > div {
+  grid-area: container;
+}
+header > div #header-container {
+  display: grid;
+  grid-template-areas: "icons logo burger";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+header > div #header-container #burger-container {
+  grid-area: burger;
+  display: flex;
+  justify-content: flex-end;
+}
+header > div #header-container #logo-container {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header > div #header-container #social-icons-container {
+  grid-area: icons;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+header > div #header-container #social-icons-container .fa-facebook-square {
+  color: white;
+  font-size: 30px;
+}
+header > div #header-container #social-icons-container .fa-twitter-square {
+  color: white;
+  font-size: 30px;
+}
+header > div #header-container #social-icons-container .fa-instagram-square {
+  color: white;
+  font-size: 30px;
+}
+
+#nav-container {
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  position: relative;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 35% 65%;
+  grid-template-areas: ". row1 ." ". row2 .";
+}
+#nav-container #nav-menu-row-1 {
+  grid-area: row1;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#nav-container #nav-menu-row-1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22%;
+}
+#nav-container #nav-menu-row-1 > div .menurow1link {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+}
+#nav-container #nav-menu-row-1 > div #menurow1link1:hover {
+  color: #E8FC53;
+}
+#nav-container #nav-menu-row-1 > div #menurow1link2:hover {
+  color: #EB3223;
+}
+#nav-container #nav-menu-row-1 > div #menurow1link3:hover {
+  color: #134092;
+}
+#nav-container #nav-menu-row-2 {
+  grid-area: row2;
+  z-index: 10;
+  margin-bottom: 7%;
+}
+#nav-container #nav-menu-row-2 > div {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 75% auto;
+  grid-template-areas: ". grid .";
+}
+#nav-container #nav-menu-row-2 > div nav {
+  grid-area: grid;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 36% 8% 28% 8% auto;
+  grid-template-areas: "menu1 . menu2 . menu3";
+}
+#nav-container #nav-menu-row-2 > div nav #menulist .menuliclass {
+  display: flex;
+  align-items: flex-end;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist .menuimgclass {
+  max-width: 100%;
+  z-index: 100;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist .img-wrapper {
+  position: relative;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist .menuimgrolloverclass {
+  max-width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist h1 {
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: lighter;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist #menuli1 {
+  grid-area: menu1;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist #menuli1 h1 {
+  font-size: 30px;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist #menuli2 {
+  grid-area: menu2;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist #menuli2 h1 {
+  font-size: 28px;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist #menuli3 {
+  grid-area: menu3;
+}
+#nav-container #nav-menu-row-2 > div nav #menulist #menuli3 h1 {
+  font-size: 23px;
+}
+#nav-container #nav-div-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#nav-container #nav-div-container .navdiv {
+  background-color: black;
+  width: 5%;
+  height: 100%;
+  flex-direction: column;
+}
