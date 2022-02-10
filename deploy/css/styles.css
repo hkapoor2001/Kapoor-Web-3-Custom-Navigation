@@ -35,6 +35,7 @@ header {
 }
 header > div {
   grid-area: container;
+  overflow: hidden;
 }
 header > div #header-container {
   display: grid;

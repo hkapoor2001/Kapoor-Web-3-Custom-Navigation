@@ -9,6 +9,7 @@ header{
 
     >div{
         grid-area: container;
+        overflow: hidden;
 
         #header-container{
             display: grid;
